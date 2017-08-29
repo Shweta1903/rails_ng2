@@ -5,16 +5,18 @@ import { HttpModule } from '@angular/http';
 import { Ng2RestAppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-//import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './home/home.component';
 import { WidgetsComponent } from './widgets/widgets.component';
 
 import { WidgetsService } from './shared/widgets.service';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    //HomeComponent,
-    WidgetsComponent
+    HomeComponent,
+    WidgetsComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

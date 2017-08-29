@@ -5,6 +5,7 @@
   # GET /widgets.json
   def index
     @widgets = Widget.all
+    render json: @widgets
   end
 
   # GET /widgets/1
