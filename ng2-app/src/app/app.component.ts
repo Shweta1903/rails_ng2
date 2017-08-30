@@ -9,6 +9,7 @@ export class AppComponent {
   title = 'app works!';
   links = {
     home: ['/'],
-    widgets: ['/widgets']
+    widgets: ['/widgets'],
+    users: ['/users']
   };
 }

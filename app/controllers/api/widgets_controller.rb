@@ -1,6 +1,5 @@
  class Api::WidgetsController < ApplicationController
   before_action :set_widget, only: [:show, :update, :destroy]
-  respond_to :json
 
   def index
     @widgets = Widget.all

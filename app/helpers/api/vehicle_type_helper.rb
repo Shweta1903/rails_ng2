@@ -1,0 +1,2 @@
+module Api::VehicleTypeHelper
+end

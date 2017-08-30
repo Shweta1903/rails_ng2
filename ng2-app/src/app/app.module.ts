@@ -5,16 +5,28 @@ import { HttpModule } from '@angular/http';
 import { Ng2RestAppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-import { WidgetsComponent } from './widgets/widgets.component';
 
+import { WidgetsComponent } from './widgets/widgets.component';
 import { WidgetsService } from './shared/widgets.service';
+
+import { BookingComponent } from './booking/index';
+
 import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+
+import { UsersComponent } from './users/users.component';
+import { UsersService } from './shared/users.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     WidgetsComponent,
-    HomeComponent
+    HomeComponent,
+    BookingComponent,
+    LoginComponent,
+    RegisterComponent,
+    UsersComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +35,8 @@ import { HomeComponent } from './home/home.component';
     Ng2RestAppRoutingModule
   ],
   providers: [
-    WidgetsService
+    WidgetsService,
+    //UsersService
   ],
   bootstrap: [AppComponent]
 })
