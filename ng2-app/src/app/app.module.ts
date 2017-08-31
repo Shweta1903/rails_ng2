@@ -17,6 +17,8 @@ import { RegisterComponent } from './register/register.component';
 
 import { UsersComponent } from './users/users.component';
 import { UsersService } from './shared/users.service';
+import { AddMoreComponent } from './add-more/add-more.component';
+
 
 @NgModule({
   declarations: [
@@ -26,7 +28,8 @@ import { UsersService } from './shared/users.service';
     BookingComponent,
     LoginComponent,
     RegisterComponent,
-    UsersComponent
+    UsersComponent,
+    AddMoreComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +39,7 @@ import { UsersService } from './shared/users.service';
   ],
   providers: [
     WidgetsService,
-    //UsersService
+    UsersService
   ],
   bootstrap: [AppComponent]
 })

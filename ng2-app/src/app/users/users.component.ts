@@ -8,11 +8,15 @@ import { UsersService } from '../shared/users.service'
 })
 
 export class UsersComponent implements OnInit {
-  constructor (private usersService: UsersService) {}
+  constructor (private UsersService: UsersService) {}
   users = []
 
   ngOnInit() {
-    //this.UsersService.getUsers().
-    //subscribe(users => this.users = users)
+    this.UsersService.getUsers().
+    subscribe(users => this.users = users)
+  }
+
+   delete(index){
+    this.users.splice(index, 1);
   }
 }

@@ -9,12 +9,15 @@ import { BookingComponent } from './booking/index';
 
 import { UsersComponent } from './users/users.component';
 
+import { AddMoreComponent } from './add-more/add-more.component';
+
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'widgets', component: WidgetsComponent },
   {path: 'booking', component: BookingComponent },
   {path: 'users', component: UsersComponent },
+  {path: 'add-more', component: AddMoreComponent},
   {path: '*', redirectTo: ''}
 ];
 
